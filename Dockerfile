@@ -9,3 +9,5 @@ RUN apk add --no-cache go git ca-certificates && \
   cp -v $GOPATH/bin/noip /bin/noip && \
   rm -rfv $GOPATH && \
   apk del go git pcre expat libcurl libssh2
+
+CMD ["/bin/noip"]
